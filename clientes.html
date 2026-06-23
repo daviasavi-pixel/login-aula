@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clientes</title>
+
+<style>
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background: #5e87c5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        background: rgb(255, 255, 255);
+        padding: 25px 35px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 320px;
+    }
+
+    h1 {
+        text-align: center;
+        font-style: oblique;
+    }
+
+    label {
+        display: block;
+        margin-top: 12px;
+    }
+
+    input, select {
+        font-size: 15px;
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 40px;
+    }
+
+    button:hover {
+        background: #0056b3;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Cadastro do Cliente</h1>
+
+    <form>
+        <label>Nome</label>
+        <input type="text">
+
+        <label>Senha</label>
+        <input type="password">
+
+        <label>Email</label>
+        <input type="text">
+
+        <label>Data de Nascimento</label>
+        <input type="date">
+
+        <label>Estado da Empresa</label>
+        <select>
+            <option>SC</option>
+            <option>SP</option>
+            <option>RJ</option>
+        </select>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</div>
+
+</body>
+</html>
